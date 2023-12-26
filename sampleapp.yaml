@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webapps
-          image: klchandrika/webapps:v1
+          image: klchandrika/webapps:${BUILD_NUMBER}
           ports:
             - containerPort: 80
             
