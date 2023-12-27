@@ -17,19 +17,6 @@ spec:
           image: klchandrika/webapps:${BUILD_NUMBER}
           ports:
             - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: sampleapp-service
-spec:
-  ports:
-    - name: nginx
-      protocol: TCP
-      port: 8080
-      targetPort: 8080
-  selector:
-    app: web            
-            
+
 
 
