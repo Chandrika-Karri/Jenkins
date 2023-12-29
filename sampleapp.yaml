@@ -15,7 +15,7 @@ spec:
       serviceAccountName: jenkins
       containers:
         - name: webapps
-          image: klchandrika/webapps:latest
+          image: klchandrika/webapps:40
           ports:
             - containerPort: 80
 ---
