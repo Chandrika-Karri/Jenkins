@@ -15,7 +15,8 @@ spec:
       serviceAccountName: jenkins
       containers:
         - name: webapps
-          image: klchandrika/webapps:${BUILD_NUMBER}
+          image: klchandrika/webapps:33
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
 ---
