@@ -12,6 +12,7 @@ spec:
       labels:
         app: web
     spec:
+      serviceAccountName: jenkins
       containers:
         - name: webapps
           image: klchandrika/webapps:${BUILD_NUMBER}
